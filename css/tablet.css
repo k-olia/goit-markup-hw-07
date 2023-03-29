@@ -1,0 +1,198 @@
+@media screen and (min-width: 768px){
+  .container{
+    width: 768px;
+  }
+    .header-container {
+
+      padding-bottom: 10px;
+      justify-content: space-between;
+    }
+    .header-list {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+    .burger-menu-btn {
+      display: none;
+    }
+    .burger-menu{
+      display: none;
+    }
+    .address{
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+    }
+    .hero {
+      height: 600px;
+      background: var(--text-color);
+      background-image: linear-gradient(var(--hero-eclipse), var(--hero-eclipse)),
+        url(../images/hero-tablet.jpg);}
+  
+    .values-section-list{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      row-gap: 72px;
+    }
+    .values-section-item{
+      display: block;
+      
+      
+  
+    }
+    .values-section-item-header {      
+      text-align: left;}
+    .values-section-item-text{
+      margin-bottom: 0;}
+
+}
+
+
+@media screen and (min-width:768px) and (max-width:1199px) {
+
+  /* Advantages Values*/
+
+  .values.list {
+      flex-wrap: wrap;
+  }
+
+  .values-section-item{
+      max-width: calc((100% - 48px)/2);
+  }
+  
+  .values-section-item:not(:nth-child(2n+1)) {
+      margin-left: 24px;
+  }
+  
+  .values-section-item:nth-last-child(-n+2) {
+      margin-bottom: 0;
+  }
+
+  /* Team */
+
+  .team-nav.list {
+      flex-wrap: wrap;
+  }
+
+  .team-nav .chapter + .chapter:not(:nth-child(2n+1)) {
+      margin-left: 24px;
+      margin-right: auto;
+  }
+  
+  .team-nav .chapter:not(:nth-last-child(-n+2)) {
+      margin-bottom: 64px;
+  }
+  
+  .team-nav .chapter:nth-last-child(-n+2) {
+      margin-bottom: 0;
+  }
+  
+  .team-nav .chapter:nth-child(2n+1) {
+      margin-right: 0;
+      margin-left: auto;
+  }
+
+  /* Customers */
+
+  .clients-list {
+      max-width: 552px;
+      margin-right: auto;
+      margin-left: auto;
+  }
+
+  .client {
+      width: calc((100% - 24px * 2)/3);
+  }
+
+  .client:nth-child(3n) {
+      margin-right: 0;
+  }
+  
+  .client:nth-last-child(-n+3) {
+      margin-bottom: 0;
+  }
+
+  /* Footer */
+
+  .foot-info {
+      flex-wrap: wrap;
+  }
+  
+  .foot-logo-end {
+      margin: 0 24px 72px 0;
+  }
+
+  .subscribe-label input {
+      min-width: 264px;
+  }
+
+  .subscribe-form {
+      /* margin: 0 auto 0 0; */
+      margin-right: auto;
+  }
+
+  .container.foot-info {
+      max-width: calc(552px + (15px *2));
+      margin-right: auto;
+      margin-left: auto;
+  }
+
+  /* Portfolio */
+
+  .section.options {
+      padding-top: 64px;
+      padding-bottom: 96px;
+  }
+
+  .btn-list.list {
+      justify-content: center;
+      margin-bottom: 64px;
+  }
+
+  .img-product img {
+      width: 100%;
+  }
+
+  .cards-nav .chapter {
+      width: calc((100% - (24px * 2))/2);
+  }
+
+  .cards-nav .chapter:not(:nth-last-child(-n+2)) {
+      margin-bottom: 72px;
+  }
+
+  .cards-nav .chapter:not(:nth-child(2n)) {
+      margin-right: 24px;
+  }
+
+  /* Background image */
+
+  @media (min-device-pixel-ratio: 1),
+  (-webkit-min-device-pixel-ratio: 1),
+  (-o-min-device-pixel-ratio: 1/1),
+  (min-resolution: 96dpi),
+  (min-resolution: 1dppx) {
+      .section.hero {
+          background-image: linear-gradient(to right,
+                  rgba(46, 47, 66, 0.7),
+                  rgba(46, 47, 66, 0.7)),
+              url(../images/hero-tablet-1x.jpg);
+          background-color: var(--secondary-background-color);
+      }
+  }
+
+  @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (-o-min-device-pixel-ratio: 2/1),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+      .section.hero {
+          background-image: linear-gradient(to right,
+                  rgba(46, 47, 66, 0.7),
+                  rgba(46, 47, 66, 0.7)),
+              url(../images/hero-tablet-2x.jpg);
+          background-color: var(--secondary-background-color);
+      }
+  }
+}

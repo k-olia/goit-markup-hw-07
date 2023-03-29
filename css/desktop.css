@@ -1,0 +1,90 @@
+@media screen and (min-width: 1200px) {
+    .container {
+      min-width: 1200px;
+      align-items: center;
+      padding: 0;
+    }
+  
+    .header-logo {}
+    .header-navigation {
+      display: flex;
+      align-items: center;
+    }
+    .header-link {
+      position: relative;
+      display: inline-block;}
+    .address-list {
+      display: flex;
+      gap: 20px;
+      margin-left: auto;
+      }
+    .address-link {
+      padding: 24px 10px;}
+  
+    .address {
+     margin-left: auto;
+      }
+    .container {
+      padding: 0;
+     }
+     .hero {
+      height: 600px;
+      background: var(--text-color);
+      background-image: linear-gradient(var(--hero-eclipse), var(--hero-eclipse)),
+        url(../images/hero-desktop.jpg);}
+    
+  .values-section{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+
+.values-section-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: var(--universal-gap);
+}
+
+.values-section-item {
+  width: calc((100%-72px) / 4);
+}
+.value-item-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--footer-link-color);
+  border-radius: 4px;
+  margin-bottom: 8px;
+  min-height: 112px;
+}
+.value-icon {
+}
+.values-section-item-header {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 8px;
+  letter-spacing: 0.02em;
+
+  /* NAVY BLUE */
+
+  color: var(--text-color);
+}
+.values-section-item-text {
+  font-size: 16px;
+  line-height: 1.5;
+  /* or 150% */
+
+  letter-spacing: 0.02em;
+
+  /* SLATE */
+
+  color: var(--text-color);
+}
+
+}
+
+
+
+
+

@@ -19,16 +19,21 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
+
+
   </head>
   <body>
     <header class="header">
-      <div class="container header-list">
+      <div class="container header-container">
         <!-- navigation-->
+        <a class="header-logo" href="./index.html">
+          <span class="span-logo">Web</span>Studio</a
+        >
         <nav class="header-navigation">
-          <a class="header-logo" href="./index.html">
-            <span class="span-logo">Web</span>Studio</a
-          >
-          <ul class="header-list list">
+           <ul class="header-list list">
             <li class="header-item">
               <a class="header-link current-page" href="./index.html">Studio</a>
             </li>
@@ -40,33 +45,92 @@
             </li>
           </ul>
         </nav>
-
         <address class="address">
           <ul class="address-list list">
-            <li class="address-phone">
+            <li class="address-email">
               <a class="address-link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li class="address-email">
+            <li class="address-phone">
               <a class="address-link" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
             </li>
           </ul>
         </address>
+        <button type="button" class="burger-menu-btn js-open-menu"><svg class="mobile-menu-icon" width="30" height="19">
+          <use href="./images/icons.svg#icon-menu-burger"></use>
+        </svg></button>
       </div>
+      <div class="burger-menu js-menu-container">
+        <button type="button" class="burger-close-btn js-close-menu"><svg class="burger-close-btn-pic" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg></button>
+        <ul class="burger-list list">
+          <li class="burger-list-item"><a href="./index.html">Studio</a></li>
+          <li class="burger-list-item"><a href="./portfolio.html">Portfolio</a></li>
+          <li class="burger-list-item"><a href="./contacts.html">Contacts</a></li>
+        </ul>
+        <div class="burger-adress-social">
+          <address class="burger-address">
+            <ul class="burger-address-list list">
+              <li class="burger-address-phone">
+                <a class="burger-address-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="burger-address-email">
+                <a class="burger-address-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="burger-social-list">
+            <li class="burger-social-list-item">
+              <a class="burger-social-list-link" href="">
+                <svg class="burger-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="burger-social-list-item">
+              <a class="burger-social-list-link" href="">
+                <svg class="burger-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="burger-social-list-item">
+              <a class="burger-social-list-link" href="">
+                <svg class="burger-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="burger-social-list-item">
+              <a class="burger-social-list-link" href="">
+                <svg class="burger-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
     </header>
-    <!--hero-->
     <main class="main">
-      <section class="hero">
+    <!--hero-->
+      <!-- <section class="hero">
         <div class="container">
           <div class="hero-container">
             <h1 class="hero-slogan">Effective Solutions for Your Business</h1>
             <button class="hero-button" data-modal-open type="button">Order Service</button>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- section 2-->
       <section class="values-section">
@@ -125,7 +189,7 @@
         </div>
       </section>
       <!--section 3-->
-      <section class="doing-section">
+      <!-- <section class="doing-section">
         <div class="container">
           <h2 class="doing-section-header">What are we doing</h2>
 
@@ -145,10 +209,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- section 4 -->
-      <section class="team-section">
+      <!-- <section class="team-section">
         <div class="container">
           <h2 class="team-section-header">Our Team</h2>
 
@@ -316,9 +380,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- --------------- Customers ---------------------- -->
-      <section class="customers-section">
+      <!-- <section class="customers-section">
         <div class="container">
           <h2 class="customers-section-header">Customers</h2>
           <ul class="customers-list list">
@@ -366,9 +430,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-cards">
         <div class="footer-card">
           <a class="footer-link" href="./index.html"
@@ -426,8 +490,8 @@
         </form>
         </div>
       </div>
-    </footer>
-    <div class="backdrop is-hidden" data-modal>
+    </footer> -->
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal"><button type="button" class="modal-close-btn" data-modal-close><svg class="modal-close-btn-pic" width="8" height="8">
         <use href="./images/icons.svg#icon-close"></use>
       </svg></button>
@@ -469,7 +533,8 @@
         <button class="modal-form-submit">Send</button>
       </form>
       </div>
-    </div>
-    <script src="./js/modal.js"></script>
+    </div> -->
+    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
