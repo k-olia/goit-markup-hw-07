@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+
     <title>Web Studio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -68,7 +70,7 @@
           <use href="./images/icons.svg#icon-close"></use>
         </svg></button>
         <ul class="burger-list list">
-          <li class="burger-list-item"><a href="./index.html">Studio</a></li>
+          <li class="burger-list-item current-page"><a href="./index.html">Studio</a></li>
           <li class="burger-list-item"><a href="./portfolio.html">Portfolio</a></li>
           <li class="burger-list-item"><a href="./contacts.html">Contacts</a></li>
         </ul>
@@ -195,17 +197,17 @@
 
           <ul class="doing-section-list list">
             <li class="doing-section-item">
-              <img src="./images/img1.jpg" alt="monitor" width="360" />
+              <img srcset="./images/img1.jpg 1x, ./images/img1@2x.jpg 2x" src="./images/img1.jpg" alt="monitor" width="360" />
             </li>
             <li class="doing-section-item">
               <img
-                src="./images/img2.jpg"
+                srcset="./images/img2.jpg 1x, ./images/img2@2x.jpg 2x" src="./images/img2.jpg"
                 alt="phone and screens"
                 width="360"
               />
             </li>
             <li class="doing-section-item">
-              <img src="./images/img3.jpg" alt="phone in hand" width="360" />
+              <img srcset="./images/img3.jpg 1x, ./images/img3@2x.jpg 2x" src="./images/img3.jpg" alt="phone in hand" width="360" />
             </li>
           </ul>
         </div>
@@ -219,6 +221,7 @@
           <ul class="team-section-lsit list">
             <li class="team-section-item">
               <img
+                srcset="./images/img4.jpg 1x, ./images/img4@2x.jpg 2x"  
                 src="./images/img4.jpg"
                 alt="Mark Guerrero's photo"
                 width="264"
@@ -260,7 +263,8 @@
               </div>
             </li>
             <li class="team-section-item">
-              <img src="./images/img5.jpg" alt="Tom Ford's photo" width="264" />
+              <img srcset="./images/img5.jpg 1x, ./images/img5@2x.jpg 2x" 
+              src="./images/img5.jpg" alt="Tom Ford's photo" width="264" />
               <div class="card">
                 <h3 class="team-section-name">Tom Ford</h3>
                 <p class="team-section-position">Frontend Developer</p>
@@ -298,6 +302,7 @@
             </li>
             <li class="team-section-item">
               <img
+                srcset="./images/img6.jpg 1x, ./images/img6@2x.jpg 2x"  
                 src="./images/img6.jpg"
                 alt="Camila Garcia's photo"
                 width="264"
@@ -339,6 +344,7 @@
             </li>
             <li class="team-section-item">
               <img
+                srcset="./images/img7.jpg 1x, ./images/img7@2x.jpg 2x"  
                 src="./images/img7.jpg"
                 alt="Daniel Wilson's photo"
                 width="264"
@@ -491,7 +497,7 @@
         </div>
       </div>
     </footer>
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal"><button type="button" class="modal-close-btn" data-modal-close><svg class="modal-close-btn-pic" width="8" height="8">
         <use href="./images/icons.svg#icon-close"></use>
       </svg></button>
@@ -533,8 +539,8 @@
         <button class="modal-form-submit">Send</button>
       </form>
       </div>
-    </div> -->
-    <!-- <script src="./js/modal.js"></script> -->
+    </div>
+    <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

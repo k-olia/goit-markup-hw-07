@@ -259,8 +259,8 @@ color: var(--small-elements-color);
 
 
 .header-link {
-  /* position: relative;
-  display: inline-block; */
+  position: relative;
+  /* display: inline-block; */
   text-decoration: none;
   color: var(--text-color);
   font-weight: 500;

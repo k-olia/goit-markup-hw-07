@@ -9,7 +9,7 @@
     }
     .header{
       padding-top: 24px;
-      padding-bottom: 10px;
+      padding-bottom: 9px;
     }
     .header-list {
       display: flex;
@@ -26,6 +26,10 @@
       display: flex;
       align-items: flex-end;
       justify-content: flex-end;
+    }
+    .address-link{
+      font-size: 12px;
+      line-height: 1.33;
     }
     .hero {
       height: 436px;

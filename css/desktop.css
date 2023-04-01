@@ -22,7 +22,9 @@
       margin-left: auto;
       }
     .address-link {
-      padding: 24px 0px;}
+      padding: 24px 0px;
+     font-size: 16px;
+    line-height: 1.5;}
   
     .address {
      margin-left: auto;
