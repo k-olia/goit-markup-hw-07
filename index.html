@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    
 
     <title>Web Studio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -70,7 +70,7 @@
           <use href="./images/icons.svg#icon-close"></use>
         </svg></button>
         <ul class="burger-list list">
-          <li class="burger-list-item current-page"><a href="./index.html">Studio</a></li>
+          <li class="burger-list-item current-page-burger"><a href="./index.html">Studio</a></li>
           <li class="burger-list-item"><a href="./portfolio.html">Portfolio</a></li>
           <li class="burger-list-item"><a href="./contacts.html">Contacts</a></li>
         </ul>
@@ -534,12 +534,19 @@
           <textarea name="user-message" class="modal-form-message" placeholder="Text input" ></textarea>
         </label>
           <input id="user-policy" type="checkbox" name="user-policy" class="modal-form-check visually-hidden">
-          <label for="user-policy" class="modal-form-check-desc">I accept the terms and conditions of the <a href="" class="modal-form-user-policy">Privacy Policy</a>
+          
+          <label for="user-policy" class="modal-form-check-desc"><span>I accept the terms and conditions of the <a href="" class="modal-form-user-policy"> Privacy Policy</a></span>
           </label>
         <button class="modal-form-submit">Send</button>
       </form>
       </div>
     </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>

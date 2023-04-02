@@ -1,7 +1,4 @@
 
-.container{
-
-}
 .header-container{
   padding: 24px 16px;
 }
@@ -29,7 +26,7 @@
       url(../images/hero-mobile.jpg);}
     
   }
-  @media (min-device-pixel-ratio: 2),
+@media (min-device-pixel-ratio: 2),
   (-webkit-min-device-pixel-ratio: 2),
   (-o-min-device-pixel-ratio: 2/1),
   (min-resolution: 192dpi),
@@ -39,8 +36,6 @@
       url(../images/hero-mobile@2x.jpg);}
     
   }
-    
-
 
 .values-section{
     padding-top: 96px;
@@ -465,3 +460,8 @@ flex-wrap: wrap;
     display: none;
     
    }}
+
+   @media screen and (max-width:420px) {
+    .modal{ width: 315px;
+    }
+   }
