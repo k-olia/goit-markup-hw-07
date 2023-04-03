@@ -1,8 +1,6 @@
 @media screen and (min-width: 1200px) {
     .container {
       max-width: 1158px;
-      align-items: center;
-      padding: 0;
       width: 100%;
     }
     .header{
@@ -29,9 +27,7 @@
     .address {
      margin-left: auto;
       }
-    .container {
-      padding: 0;
-     }
+
      .hero {
       height: 600px;
       width: 100%;
@@ -149,6 +145,7 @@
 .footer-cards {
 
   flex-direction: row;
+  flex-wrap: nowrap;
   gap: 0;
   align-items: normal;
   

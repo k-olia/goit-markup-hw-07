@@ -8,9 +8,11 @@
       justify-content: space-between;
     }
     .header{
-      padding-top: 24px;
-      padding-bottom: 9px;
+
     }
+    .header-logo {
+      padding-right: 76px;}
+
     .header-list {
       display: flex;
       align-items: center;
